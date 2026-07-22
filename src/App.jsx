@@ -9,7 +9,9 @@ function App() {
   };
   return (
     <>
+    <div className="app">
       <User user={user} />
+    </div>
     </>
   );
 }
