@@ -1,16 +1,97 @@
-# React + Vite
+# React User Eligibility Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React.js application demonstrating the use of **components, props, and state management**.
+The application creates a user object, passes it to a `User` component using props, displays user information, and checks eligibility based on age using React state.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Created a reusable `User` component
+* Passed user data from parent component using props
+* Displayed user information:
 
-## React Compiler
+  * Name
+  * Email
+  * City
+  * Date of Birth
+  * Age
+* Used React `useState` hook for:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Managing user age
+  * Managing eligibility status
+* Implemented eligibility checking logic:
 
-## Expanding the ESLint configuration
+  * Age greater than 18 and less than 25 → Eligible
+  * Otherwise → Ineligible
+* Added a button to check eligibility
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+| Technology        | Purpose                                   |
+| ----------------- | ----------------------------------------- |
+| React.js          | Building reusable UI components           |
+| JavaScript (ES6+) | Logic and data handling                   |
+| Vite              | Project setup and development environment |
+| CSS               | Styling and layout                        |
+
+## Project Structure
+
+```bash
+react-user-eligibility-checker/
+│
+├── src/
+│   ├── components/
+│   │   └── User.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── public/
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## How to Run Locally
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Move into the project directory:
+
+```bash
+cd react-user-eligibility-checker
+```
+
+Install project dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## React Concepts Practiced
+
+* Functional Components
+* Props
+* Passing Objects as Props
+* `useState` Hook
+* Event Handling (`onClick`)
+* Conditional Logic
+
+## Author
+
+Sehrish Maqbool
+BS IT Student
