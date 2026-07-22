@@ -5,7 +5,7 @@ The application creates a user object, passes it to a `User` component using pro
 
 ## Features
 
-* Created a reusable `User` component
+* Created a reusable `User` compon
 * Passed user data from parent component using props
 * Displayed user information:
 
@@ -65,7 +65,7 @@ git clone <repository-url>
 Move into the project directory:
 
 ```bash
-cd react-user-eligibility-checker
+cd react-user-eligibility
 ```
 
 Install project dependencies:
